@@ -1,0 +1,16 @@
+#myFinal {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: serif; 
+  color:darkGreen; 
+  text-align:"center";
+}
+a {
+  color: midnightBlue;
+}
+
+img {
+  display: block; 
+  max-width: 100%;
+}

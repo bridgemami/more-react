@@ -15,9 +15,10 @@ function FinalList(final) {
     final.list.map(
       (item, index) => (
         <li key={index}>
-        <a href={item.url}><img src={item.imagepath} /></a><br />
-        {item.description}<br /> {item.date}<br />
-        <a href={item.url} alt={item.alt}>{item.url}</a><hr /> <br />
+        <h3><a href={item.url} alt={item.alt}>{item.title}</a></h3>
+        <a href={item.url}><img src={item.imagepath} /></a><p>
+        {item.description}<br /> {item.date}</p>
+        <hr />
         </li>
       )
     )
@@ -40,4 +41,4 @@ jQuery.getJSON(
       document.getElementById('myFinal')
     );
   }
-)
+);
