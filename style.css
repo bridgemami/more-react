@@ -1,16 +1,47 @@
 #myFinal {
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes fly{
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.25) rotate(90deg);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(0.5) rotate(270deg);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale(0.75) rotate(90deg);
+    opacity: 0.75;
+  }
+  100% {
+  transform: scale(1);
+    opacity: 1.0;
+  }
+}
 h1 {
   font-family: serif; 
   color:darkGreen; 
-  text-align:"center";
+  text-align: center;
+  animation: fly 4s linear;
+
 }
 a {
   color: midnightBlue;
 }
 
 img {
-  display: block; 
+  display: block;
+  margin: auto; 
   max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    margin: 0px;
+  }
 }
