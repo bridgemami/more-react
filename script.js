@@ -7,4 +7,22 @@ console.log("let's start");
 // define a react page component using traditional pure JS
 function FinalList(props) {
   // return some output for the component using JSX
+  return <div className="list">
+  <ol>
+  {
+    // use map() to loop thru array passed in props.list, creating new element for each array value
+    props.list.map(
+      (item, index) => (
+        <li key={index}>
+        <a href={item.url}><img src={item.imagepath} /></a><br />
+        <p>{item.description} {item.date}<br />
+        {item.url}</p>
+        </li>
+      )
+    )
+  }
+  </ol>
+  </div>
 }
+console.log("props function";)
+// load dataset from external JSON using jQuery
